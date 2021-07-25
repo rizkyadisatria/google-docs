@@ -6,25 +6,13 @@ function header() {
     const [session] = useSession()
     return (
         <header className="sticky top-0 z-50 flex items-center px-4 py-2 shadow-md bg-white">
-            <Button 
-                color='gray' 
-                buttonType='link'
-                rounded={true}
-                iconOnly={true}
-                ripple='dark'
-                className='hidden md:inline-flex h-20 w-20 border-0'
-            >
-                <Icon name='menu' size='3xl'/>
-            </Button>
-
             <Icon name='description' size='5xl' color='blue'/>
-            <h1 className='hidden md:inline-flex ml-2 text-gray-700 text-2xl'>Docs</h1>
+            <h1 className='hidden md:inline-flex ml-2 mr-10 text-gray-700 text-2xl'>Docs</h1>
 
-            <div className='flex flex-grow md:mx-30 items-center mx-3 px-2 py-2 bg-gray-100 
+            <div className='flex flex-grow items-center mx-3 px-2 py-2 bg-gray-100 
             text-gray-600 rounded-lg focus-within:text-gray-600 focus-within:shadow-md'>
                 <Icon name='search' size='2xl' color='gray'/>
-                <input type="text" placeholder="Search" className="flex-grow text-base bg-transparent outline-none"/>
-                
+                <input type="text" placeholder='Search' className="flex-grow text-base bg-transparent outline-none ml-1"/>
             </div>
 
             <Button 
